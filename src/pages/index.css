@@ -1,0 +1,147 @@
+.index{
+    position: relative;
+    width: 100%;
+}
+.index__header{
+    padding-top: 35px;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.index__hambuger{
+    position: absolute;
+    left: 5vw;
+    cursor: pointer;
+}
+.index__description{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 8vw;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.index__dynamicDescriptionPart{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+    position: relative;
+}
+.index__description--padding{
+    padding: 45px 30px;
+}
+.index__descriptionMotionContainer{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: static;
+}
+.index__HookChildrenDescription{
+    width: 100%;
+    display: grid;
+    box-sizing: border-box;
+}
+.index__titleAndDescriptionContainer{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.index__descriptionTitle{
+    font-size: 27px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+.index__descriptionParagraph{
+    color: var(--secondary-color);
+    font-size: 11.7px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.index_shopNowContainer{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.index_btnShop{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: 10px;
+    font-weight: 600;
+    gap: 10%;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+    transition: opacity .2s linear;
+}
+.index__secondaryImage{
+    margin-top: 40px;
+    width: 100%;
+}
+.index__secondaryImage--margin0{
+    margin: 0;
+}
+.index__fornitureTitle{
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.positionAbsolute{
+    position: absolute;
+}
+.positionAbsolute--left{
+
+}
+@media only screen and (min-width: 600px){
+    .index{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .index__description{
+        width: calc(100% - 59.95vw);
+        position: relative;
+        justify-content: flex-start;
+        padding: 7.5% 4.9vw 0 4.9vw;
+    }
+    .index__description--padding{
+        padding: 40px 3vw;
+    }
+    .index__descriptionTitle{
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .index__descriptionParagraph{
+        font-size: 11.5px;
+    }
+    .index_shopNowContainer{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .index_btnShop:hover{
+        opacity: .5;
+    }
+    .index__sliderArrowsTogglers{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .index__secondaryImage{
+        margin: 0;
+        width: calc(calc(100% - calc(100% - 59.95vw)) / 2);
+    }
+}
+@media only screen and (min-width: 1200px){
+    .index__description{
+        padding: 11% 4.9vw 0 4.9vw;
+    }
+}

@@ -3,3 +3,13 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+window.matchMedia = (query) => ({
+  media: query,
+  matches: query === '(min-width: 600px)',
+  onchange: null,
+  addListener: jest.fn(), // Deprecated
+  removeListener: jest.fn(), // Deprecated
+  addEventListener: jest.fn(),
+  removeEventListener: jest.fn(),
+  dispatchEvent: jest.fn(),
+});
